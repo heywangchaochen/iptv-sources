@@ -1,0 +1,12 @@
+name: Print Timezone
+ 
+on:
+  push:
+ 
+jobs:
+  print-timezone:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Timezone
+      run: |
+        echo "The current timezone is $(date +'%Z')"
